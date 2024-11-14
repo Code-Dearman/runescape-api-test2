@@ -7,31 +7,38 @@ import requests
 
 def get_runescape_data(request, player_name):
     url = f'https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player={player_name}'
+    response = requests.get(url)
 
-    # make a get request for player data
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
+    if response.status_code == 200:
+        try:
+            # split response text by newlines
+            lines = resonse.text.splitlines()
 
-    # split the CSV data into rows
-        data = response.text.strip().split('\n')
+            # parse each line and handle the missing or incomplete data
+            data = []
+            for line in lines:
+                skill_data = line.split(',')
 
-    # put data into a dictionary
-        stats = {}
-        for line in data:
-            skill_data = line.split(',')
-            skill_name = skill_data[0]
-            rank = skill_data[1]
-            level = skill_data[2]
-            experience = skill_data[3] if len(skill_data) > 3 else None
+                # ensure we have at least 3 items (rank, level, experience)
+                if len(skill_data) >= 3:
+                    # append parsed data to our list
+                    data.append({
+                        "rank": skill_data[0],
+                        "level": skill_data[1],
+                        "experience": skill_data[2],
+                    })
+                else:
+                    # handles cases with missing values by marking as "N/A"
+                    data.append({
+                        "rank": skill_data[0] if len(skill_data) > 0 else "N/A",
+                        "level": skill_data[1] if len(skill_data) > 1 else "N/A",
+                        "experience": skill_data[2] if len(skill_data) > 2 else "N/A",
+                    })
+            return JsonResponse({"player": player_name, "data": data})
 
-            stats[skill_name] = {
-                'rank': rank,
-                'level': level,
-                'experience': experience
-        }
-    
-    # return the data as a JSON response
-        return JsonResponse(stats)
-    except requests.exceptions.RequestException as e:
-        return JsonResponse({'error': str(e)}, status=500)
+        except IndexError:
+            # handle any unexpected data issues
+            return JsonResponse({"error": "Data parsing error"}, status=500)
+
+    else:
+        return JsonResponse({"error": "unable to retrieve data"}, status=400)
