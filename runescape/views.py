@@ -12,7 +12,7 @@ def get_runescape_data(request, player_name):
     if response.status_code == 200:
         try:
             # split response text by newlines
-            lines = resonse.text.splitlines()
+            lines = response.text.splitlines()
 
             # parse each line and handle the missing or incomplete data
             data = []
