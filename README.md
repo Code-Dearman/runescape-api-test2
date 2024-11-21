@@ -42,7 +42,7 @@ GitHub repository: _link_
     - [PostgreSQL](#postgresql)
     - [Heroku](#heroku)
     - [Clone](#clone)
-    - [Form](#form)
+    - [Fork](#fork)
 11. [Credits](#credits)
 
 
@@ -103,64 +103,104 @@ This last point was particulary importand for my project as I have a public area
 Users can:
 - View public lists on the homepage
 - Create an account
-- Login and view their profile
+- Login to their account
 - Create a new to-do list
-- Mark their list and public and see it on the home page
-- 
+- View their to-do lists
+- Request their list to be made public
+- Link their runescape character to their profile
+- Delete their to-do lists
+- Mark their to-do lists as completed
+
+Superusers can:
+- View all public lists
+- Approve public list requests
+- Create and delete lists
 
 ## Future Features
 
-
+_Outline future features_
 
 ## Technology and Languges
 
 ### Languages
 
-
+The languages used for this project were:
+- HTML
+- CSS
+- JavaScript
+- Python
 
 ### Frameworks
 
-
+The frameworks used for this project were:
+- Django
+- Bootstrap
 
 ### Tools and Programs
 
-
+Additional tools and programs used include:
+- wireframe.cc for wireframe creation
+- SmartDraw for ERD
+- chatGPT for general advice and insight on project planning, error checking code snippets and spell checking.
+- FontAwesome for webpage icons
+- Googlefonts for fonts
+- Git for version control
+- Gitpod for writing and pushing code to repository. 
+- GitHub for storing repository
 
 ## Testing
 
 ### Validation Testing
 
+The validation testing was done using the [W3C](#https://www.w3.org/) website HTML and CSS validator.
 
+_add images of complete validation testing_
 
 ### User Testing
 
+Manual user testing was done by me. I made sure that I could access and perform all the neccessary features, both as user and superuser. This included:
+- Making to-do lists (as user and superuser)
+- Deleting to-do lists (as user and superuser)
+- Requesting lists be made public (as user)
+- Approving lists (as superuser)
+- Linking runescape characters (as user)
+- Creating new accounts (as user)
 
+**Browser Compatablity**: The website was tested Firefox and Chrome for desktop view and Safari and Firefox for mobile view.
+
+**Responsiveness Testing**: I tested the responsiveness of all areas of the website on both desktop and mobile phone views.
 
 ### Automated Testing
 
-
+_Write about automated tests or delete if unable to complete in time_
 
 ## Deployment
 
 ### GitHub
 
-
+This project was created on the Gitpod CDE and Git was used for version control. The repository is stored on GitHub and was linked to Heroku for deployment.
 
 ### Django
 
-
+Django was essential to the deployment process as it works seemlessly with Heroku. Adding allowed hosts in config/settings.py means that you can choose what hosts are allowed for the website. 
 
 ### Cloudinary
 
-
+_Add cloudinary info later_
 
 ### PostgreSQL
 
-
+_add later_
 
 ### Heroku
 
+Deploying on Heroku was done with these steps.
 
+- Create a new Heroku app.
+- Choose GitHub as the deployment method in the app dashboard.
+- For my project I did manual deployments from the main branch.
+- Set the config vars in Heroku to match the vars in eny.py to protect secret keys and passwords.
+- Click deploy and wait for Heroku to finishing setting up the website.
 
 ### Clone 
 
