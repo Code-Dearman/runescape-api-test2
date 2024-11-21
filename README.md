@@ -82,19 +82,31 @@ _MoSCow examples images_
 
 ### Wiresframes
 
-Wire framing was done using
+The wire framing for this project was done using the free trial of [wireframe.cc](#https://wireframe.cc/). 
+
+_Wire framing images_
 
 ### Entity Relationship Diagram
 
+The entity relationship diagram for this project was created using [SmartDraw](#https://www.smartdraw.com/)
 
+_ERD images_
 
 ## Security
 
+Fortunately Django contains a lot of inbuilt security features such as CSRF protection, the encrypted storage of passwords and the ability to create a superuser to manage and control what data is entered into the public site. 
 
+This last point was particulary importand for my project as I have a public area where users can post their to-do lists to the home page. The superuser abilites mean that I am able to approve or deny public lists before they are posted to the homepage and thus ensure that there is no sensitive or offensive content. 
 
 ## Features
 
-
+Users can:
+- View public lists on the homepage
+- Create an account
+- Login and view their profile
+- Create a new to-do list
+- Mark their list and public and see it on the home page
+- 
 
 ## Future Features
 
