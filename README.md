@@ -111,6 +111,8 @@ Users can:
 - Delete their to-do lists
 - Mark their to-do lists as completed
 
+_img of various features_
+
 Superusers can:
 - View all public lists
 - Approve public list requests
