@@ -18,6 +18,9 @@ GitHub repository: _link_
 1. [RuneTask Introduction](#RuneTask)
 2. [How To Use The App](#how-to-use-the-app)
 3. [UX - User Experience](#ux---user-experience)
+    - [Accessibility and Responsiveness](#accessibility-and-responseiveness)
+    - [Colour Palette](#colour-palette)
+    - [Fonts](#fonts)
 4. [Project Planning](#project-planning)
     - [Agile](#agile)
     - [Wireframe](#wiresframes)
@@ -60,7 +63,18 @@ When you've completed your task you can edit the task list and mark it as comple
 
 ## UX - User Experience
 
-_Description of how I decided on the colour palettes and why I made certain choices. Discuss the accessibility and responsiveness of the app._
+
+### Accessibility and Responseiveness
+
+_Discuss the accessibility and responsiveness of the app._
+
+### Colour Palette
+
+
+
+### Fonts
+
+
 
 ## Project Planning
 
