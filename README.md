@@ -70,11 +70,19 @@ _Discuss the accessibility and responsiveness of the app._
 
 ### Colour Palette
 
+Given the oldschool, medieval and MMO related nature of the app I chose mostly dark and earth tones for my app. I stuck with white and off white for the text to maintain readability for users. I asked chatGPT to generate additional colours which suited the palette for positive and negative buttons.
 
+_colour palette images_
 
 ### Fonts
 
+For the fonts I chose  Metamorphous - Designed by James Grieshaber from GoogleFonts - This suited my medieval style with its serifs but is still quite readable. 
 
+_Metamorphous img_
+
+I decided to use the alternative font Roboto - Designed by Christian Robertson for areas where I thought the readability was particularly important such as buttons and notification messages.
+
+_Roboto image_
 
 ## Project Planning
 
@@ -96,13 +104,13 @@ _MoSCow examples images_
 
 ### Wiresframes
 
-The wire framing for this project was done using the free trial of [wireframe.cc](#https://wireframe.cc/). 
+The wire framing for this project was done using the free trial of [wireframe.cc](https://wireframe.cc/). 
 
 _Wire framing images_
 
 ### Entity Relationship Diagram
 
-The entity relationship diagram for this project was created using [SmartDraw](#https://www.smartdraw.com/)
+The entity relationship diagram for this project was created using [SmartDraw](https://www.smartdraw.com/)
 
 _ERD images_
 
@@ -132,6 +140,8 @@ Superusers can:
 - Approve public list requests
 - Create and delete lists
 
+_img of superuser features_
+
 ## Future Features
 
 _Outline future features_
@@ -149,26 +159,26 @@ The languages used for this project were:
 ### Frameworks
 
 The frameworks used for this project were:
-- Django
-- Bootstrap
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ### Tools and Programs
 
 Additional tools and programs used include:
-- wireframe.cc for wireframe creation
-- SmartDraw for ERD
-- chatGPT for general advice and insight on project planning, error checking code snippets and spell checking.
-- FontAwesome for webpage icons
-- Googlefonts for fonts
+- [Wireframe.cc](https://wireframe.cc/) for wireframe creation
+- [SmartDraw](https://www.smartdraw.com/) for ERD
+- [chatGPT](https://chatgpt.com/) for general advice and insight on project planning, error checking code snippets and spell checking.
+- [FontAwesome](https://fontawesome.com/) for webpage icons
+- [Googlefonts](https://fonts.google.com/) for fonts
+- [GitHub](https://github.com/) for storing repository
 - Git for version control
 - Gitpod for writing and pushing code to repository. 
-- GitHub for storing repository
 
 ## Testing
 
 ### Validation Testing
 
-The validation testing was done using the [W3C](#https://www.w3.org/) website HTML and CSS validator.
+The validation testing was done using the [W3C](https://www.w3.org/) website HTML and CSS validator.
 
 _add images of complete validation testing_
 
